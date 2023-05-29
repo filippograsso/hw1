@@ -1,0 +1,384 @@
+html{
+    background-color: ghostwhite;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto;
+    font-family: Roboto;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    background-color: #fff;
+}
+
+#page-wrapper{
+    display: flex;
+    flex-direction: row;
+    /*margin-top: 50px;*/
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid whitesmoke;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#left_header{
+    border-right: 2px solid whitesmoke;
+    width: 200px;
+    overflow-x: hidden;
+    transition: .5s ease;
+}
+
+#main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#main_header div{
+    display: none;
+    height: 0px;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+header div a{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#main_header div button{
+    position: absolute;
+    left: 0;
+    width: 20px; height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 0;
+    border: 0;
+    font-size: 20px;
+}
+
+#icon{
+    width: 20px;
+    height: fit-content;
+    margin-right: 11px;
+}
+
+#logo{
+    height: 20px;
+    width: fit-content;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    border-right: 2px solid whitesmoke;
+    background-color: #fff;
+    z-index: 2;
+    overflow-x: hidden;
+    transition: .5s ease;
+}
+
+nav a{
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+nav a:hover{
+    background-color: whitesmoke;
+}
+
+nav a i{
+    width: 20px;
+    margin-right: 11px;
+}
+
+
+#main{
+    margin-left: 200px;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modale.hidden, .hidden {
+    display: none; 
+}
+
+button, input[type='button']{
+    cursor: pointer;
+}
+
+.scheda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.scheda:hover{
+    background-color: whitesmoke;
+}
+
+.scheda h2{
+    margin-top: 0;
+}
+
+.scheda div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scheda p{
+    margin: 0;
+}
+
+.scheda img{
+    width: 65px; height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px;
+}
+
+
+.modale.start{
+    justify-content: flex-start;
+}
+
+.modale {
+    position: fixed;
+    /*top: -20;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.modale form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 40%;
+    background-color: #fff;
+    padding: 0px 30px 20px 30px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.modale form label, .modale form div{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    position: relative;
+    width: 80%;
+}
+
+.modale form div{
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.modale form div div{
+    margin: 0px;
+    width: 100%;
+    padding: 0;
+}
+
+.modale form div label{
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+
+.modale form input, .modale form select{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    padding: 0px 10px;
+}
+
+.modale form h2{
+    margin: 0 0 10px 0;
+}
+
+.modale form input[type='submit']{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modale form input[type='radio'], .modale form input[type='checkbox']{
+    height: 15px; width: 15px;
+    cursor: pointer;
+}
+
+.modale form input[type='radio']{
+    margin: 0px 0px 0px 7px;
+}
+
+.modale form input[type='checkbox']{
+    margin: 0px 10px 0px 0px;
+}
+
+.modale form img{
+    width: 50px;
+    padding: 10px 0px 30px 0px;
+}
+
+    
+#modaleScheda section{
+    background-color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    border: 1px solid whitesmoke;
+    border-radius: 0px;
+}
+
+#modaleScheda img{
+    width: 200px;
+    height: fit-content;
+}
+
+#modaleScheda section img{
+    padding-left: 15px;
+    max-height: 80vh;
+}
+
+
+.max{
+    width: 70%;
+}
+
+
+@media (max-width: 1100px){
+    .modale form{
+        width: 60%;
+    }
+
+    .modale form label, .modale form div, .modale form span{
+        width: 90%;
+    }
+
+    body, .max{
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px){
+    .modale form{
+        width: 80%;
+    }
+
+    #modaleScheda section{
+        flex-direction: column;
+    }
+
+    .modale form label, .modale form div{
+        width: 100%;
+    }
+
+    body, .max{
+        width: 90%;
+    }
+
+    nav, #left_header{
+        width: 0;
+        border-right: 0;
+    }
+
+    nav.max a{
+        width: 100%;
+    }
+
+    #main{
+        margin-left: 0px;
+    }
+
+    #main_header{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%; width: 100%;
+        padding: 0 20px;
+    }
+
+    #main_header div{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    #main_header div a{
+        padding: 0;
+    }
+
+    header{
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 400px){
+    body, .max{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .modale form{
+        width: 95%;
+    }
+
+    .modale form input{
+        font-size: 15px;
+    }
+}

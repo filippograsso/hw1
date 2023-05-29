@@ -1,0 +1,198 @@
+.modale form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+form[name='creaScheda'] section{
+    display: flex;
+    width: 80%;
+    margin-top: 3px;
+}
+
+form[name='creaScheda'] input[type='submit'] {
+    margin: 30px 0px 10px 0px;
+}
+
+form[action='crea_scheda.php']{
+    display: initial; 
+    flex-direction: initial; 
+    align-items: initial; 
+    width: initial; 
+    background-color: initial; 
+    padding: initial; 
+    margin: initial; 
+    border-radius: initial;
+}
+
+form[action='crea_scheda.php'] input[type='submit'] {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form[action='crea_scheda.php'] input, form[action='crea_scheda.php'] select {
+    width: initial;
+    height: initial;
+    font-size: initial;
+    padding: initial;
+}
+
+.scheda{
+    align-items: initial;
+}
+
+#creaScheda{
+    width: 100%;
+    padding: 15px;
+    margin-left: 2px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-size: 17px;
+    background: #fff;
+    border: 0;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+
+#creaScheda:hover{
+    background: whitesmoke;
+}
+
+#nomeCategorie{
+    width: 33%;
+}
+
+#divCategorie{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+}
+
+#divCategorie label{
+    width: 50%;
+}
+
+.centrale{
+    justify-content: center;
+}
+
+.msg{
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+#msgEsercizi{
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.scheda section{
+    display: flex;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+
+.eliminaScheda.sideButton, .aggiungiEsercizi.sideButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; height: 20px;
+    background: transparent;
+    border: 0;
+    color: red;
+    font-size: 16px;
+    transition: .1s ease;
+    /*z-index: 2;*/
+}
+
+.aggiungiEsercizi.sideButton{
+    color: green;
+    font-size: 14px;
+}
+
+.aggiungiEsercizi.sideButton:hover{
+    font-size: 19px;
+}
+
+.eliminaScheda.sideButton:hover{
+    font-size: 22px;
+}
+
+#modaleScheda>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+#modaleScheda div div{
+    height: 100%;
+    align-items: flex-start;
+}
+
+#modaleScheda div p{
+    margin: 5px 0;
+}
+
+#modaleScheda .eliminaScheda.sideButton{
+    font-size: 18px;
+    position: relative;
+    bottom: 3px;
+    left: 15px;
+}
+
+#modaleScheda .eliminaScheda.sideButton:hover{
+    font-size: 22px;
+}
+
+
+
+
+@media(max-width: 1100px){
+    .modale form{
+        width: 70%;
+    }
+
+    #modaleScheda>div{
+        width: 80%;
+    }
+
+    form[name='creaScheda'] section {
+        width: 90%;
+    }
+}
+
+@media(max-width: 700px){
+    .modale form{
+        width: 80%;
+    }
+
+    form[name='creaScheda'] section {
+        width: 100%;
+    }
+
+    #modaleScheda>div{
+        width: 90%;
+    }
+
+    #modaleScheda .closeButtonDiv{
+        order: -1;
+        width: 100%;
+    }
+
+    #modaleScheda .eliminaScheda.sideButton{
+        left: 100%;
+    }
+}
+
+
+@media (max-width: 400px){
+    .modale form{
+        width: 95%;
+    }
+
+    #modaleScheda>div{
+        width: 100%;
+    }
+}

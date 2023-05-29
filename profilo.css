@@ -1,0 +1,137 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#container img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px;
+}
+
+article label, article div{
+    margin-bottom: 16px;
+}
+
+span{
+    width: 100%;
+    text-align: end;
+}
+
+span button, span input[type='button']{
+    background: 0;
+    border: 0;
+    font-size: 18px;
+    margin: 0px 4.5px;
+    transition: .1s ease;
+    width: 34px;
+    height: 30px;
+}
+
+span button:hover, span input[type='button']:hover{
+    font-size: 20px;
+}
+
+#propic {
+    display: none;
+}
+
+label[for="propic"]{
+    position: relative;
+}
+
+form label.after{
+    cursor: pointer;
+}
+
+.fa-camera{
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    padding: 8px;
+}
+
+.hidden, i.hidden{
+    display: none;
+}
+
+#errore{
+    color: red;
+    font-size: 10.5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#successo{
+    color: limegreen;
+    font-size: 10.5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+form label.after, form div.after{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+    width: 50%;
+}
+
+form div.after{
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+form div label.after{
+    justify-content: flex-end;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+form label[for='propic'].after{
+    width: initial;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+form input[type='radio'], form input[type='checkbox']{
+    height: 15px; width: 15px;
+    cursor: pointer;
+}
+
+form input[type='radio']{
+    margin: 0px 3px 0px 0px;
+}
+
+form input[type='checkbox']{
+    margin: 0px 10px 0px 0px;
+}
+
+@media (max-width: 1100px){
+    form label.after, form div.after{
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px){
+    form label.after, form div.after{
+        width: 90%;
+    }
+}
